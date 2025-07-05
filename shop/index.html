@@ -67,21 +67,17 @@
     }
     @media (max-width: 768px) {
       .menu {
-        width: 100%;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
       }
       nav {
-        flex: 1;
-        flex-wrap: nowrap;
-        font-size: 14px;
+        flex-wrap: wrap;
+        font-size: 16px;
       }
       select {
-        font-size: 12px;
-        padding: 4px;
-        width: auto;
-        margin: 0;
+        align-self: flex-start;
+        margin-left: auto;
+        margin-top: 0;
       }
       header {
         flex-direction: column;
@@ -98,7 +94,10 @@
 </head>
 <body>
 <header>
-<img alt="Logo" class="logo" src="../logo_transparent.png"/>
+<img alt="Logo" class="logo" src="../logo_transparent.png"/><select id="langSelect">
+<option value="en">🇬🇧 EN</option>
+<option value="pt">🇵🇹 PT</option>
+</select>
 <div class="menu">
 <nav>
 <a data-i18n="header_home" href="../index.html">Home</a>
@@ -106,10 +105,7 @@
 <a data-i18n="header_videos" href="../videos/">Videos</a>
 <a data-i18n="header_articles" href="../articles/">Articles</a>
 </nav>
-<select id="langSelect">
-<option value="en">🇬🇧 EN</option>
-<option value="pt">🇵🇹 PT</option>
-</select>
+
 </div>
 </header>
 <main>
