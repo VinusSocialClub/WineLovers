@@ -46,8 +46,7 @@
       margin-bottom: 20px;
     }
     .left button {
-  margin-left: 325px;
-  
+  margin-left: 200px;
   margin-top: 10px;
       padding: 12px 24px;
       background-color: #f1c40f;
@@ -58,7 +57,7 @@
       cursor: pointer;
     }
     .right img {
-      max-width: 260px;  display: block; transform: translate(-40px, -60px);
+      max-width: 260px; margin: 0 auto; display: block; transform: translate(-40px, -60px);
       border-radius: 10px;
     }
     .cards {
@@ -88,11 +87,21 @@
     }
   
 .left button {
-  margin-left: 325px;
-  
+  margin-left: 200px;
   margin-top: 10px;
   display: block;
   margin-left: 0;
+}
+
+.text-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  padding-left: 50px;
+}
+.text-button-wrapper button {
+  margin: 0;
 }
 </style>
 </head>
@@ -107,11 +116,7 @@
 </nav>
 </header>
 <section class="main-section">
-<div class="left">
-<h1>WINE ENTHUSIASTS, REJOICE!</h1>
-<p><em>Uncork the joys of wine and the vine with Vinus Social Club</em></p>
-<button>SHOP NOW</button>
-</div>
+<div class="left"><div class="text-button-wrapper"><h1>WINE ENTHUSIASTS, REJOICE!</h1><p><em>Uncork the joys of wine and the vine with Vinus Social Club</em></p><button>SHOP NOW</button></div></div>
 <div class="right">
 <img alt="Wine tasting woman" src="imagem_mulher.jpg"/>
 </div>
