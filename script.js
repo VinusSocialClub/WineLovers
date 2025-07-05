@@ -1,9 +1,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-  const langData = JSON.parse(document.getElementById("lang-data").textContent);
   const selector = document.getElementById("langSelect");
 
-  function updateLanguage(lang) {
+  function updateLanguage(langData, lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
       if (langData[lang] && langData[lang][key]) {
@@ -12,11 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  selector.addEventListener("change", e => {
-    const lang = e.target.value;
-    updateLanguage(lang);
-  });
-
-  // Load default language
-  updateLanguage(selector.value);
+  fetch("lang.json")
+    .then(res => res.json())
+    .then(langData => {
+      updateLanguage(langData, selector.value);
+      selector.addEventListener("change", e => {
+        updateLanguage(langData, e.target.value);
+      });
+    });
 });
