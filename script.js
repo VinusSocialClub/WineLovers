@@ -1,7 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const selector = document.getElementById("langSelect");
-
   if (!selector) return;
 
   const langData = {
@@ -18,7 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
       "card2_title": "WATCH VIDEOS",
       "card2_text": "Sip, swirl, and smile with our fun, informative wine videos.",
       "card3_title": "READ ARTICLES",
-      "card3_text": "Get the latest grape on all things wine with our articles."
+      "card3_text": "Get the latest grape on all things wine with our articles.",
+      "shop_title": "Our Wine Collection",
+      "shop_description": "Browse and discover your next favorite bottle.",
+      "shop_back_button": "Back to Home",
+      "videos_title": "Videos Section",
+      "videos_description": "Fun and educational wine content coming soon.",
+      "videos_back_button": "Back to Home",
+      "articles_title": "Articles Section",
+      "articles_description": "Read about wine trends, tips and more.",
+      "articles_back_button": "Back to Home"
     },
     "pt": {
       "header_home": "Início",
@@ -33,7 +41,16 @@ document.addEventListener("DOMContentLoaded", () => {
       "card2_title": "VER VÍDEOS",
       "card2_text": "Saboreie e divirta-se com os nossos vídeos informativos sobre vinho.",
       "card3_title": "LER ARTIGOS",
-      "card3_text": "Fique a par de tudo sobre vinhos com os nossos artigos."
+      "card3_text": "Fique a par de tudo sobre vinhos com os nossos artigos.",
+      "shop_title": "A Nossa Coleção de Vinhos",
+      "shop_description": "Explora e descobre a tua próxima garrafa favorita.",
+      "shop_back_button": "Voltar ao Início",
+      "videos_title": "Secção de Vídeos",
+      "videos_description": "Conteúdos divertidos e educativos sobre vinho brevemente.",
+      "videos_back_button": "Voltar ao Início",
+      "articles_title": "Secção de Artigos",
+      "articles_description": "Lê sobre tendências do vinho, dicas e muito mais.",
+      "articles_back_button": "Voltar ao Início"
     }
   };
 
