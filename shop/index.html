@@ -1,106 +1,441 @@
+
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Wine Collection | Vinus Social Club</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vinus Social Club</title>
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
       margin: 0;
+      padding: 0;
       font-family: Arial, sans-serif;
       background-color: #004225;
       color: white;
       overflow-x: hidden;
     }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      flex-wrap: wrap;
     }
+
     .logo {
-      height: 120px;
-      object-fit: contain;
+      height: 100px;
     }
-    .menu {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    nav {
-      display: flex;
-      gap: 20px;
-    }
+
     nav a {
       color: white;
       text-decoration: none;
+      margin-left: 20px;
       font-weight: bold;
       font-size: 18px;
-      white-space: nowrap;
     }
-    select {
-      margin-left: 20px;
-      padding: 5px;
+
+    .main-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      flex-wrap: wrap;
     }
-    main {
-      padding: 60px 20px;
-      text-align: center;
+
+    .left {
+      max-width: 500px;
     }
-    h1 { font-size: 36px; margin-bottom: 20px; }
-    p {
+
+    .left h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .left p {
       font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto;
+      margin-bottom: 20px;
     }
-    a.button {
-      display: inline-block;
-      margin-top: 30px;
+
+    .left button {
+  margin-bottom: 30px;
       padding: 12px 24px;
       background-color: #f1c40f;
       color: black;
       font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
     }
+
+    .right img {
+      max-width: 400px;
+      border-radius: 10px;
+    }
+
+    .section-white {
+      background-color: white;
+      color: black;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      margin: 10px;
+      min-width: 250px;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card:nth-child(1) { background-color: pink; }
+    .card:nth-child(2) { background-color: orange; }
+    .card:nth-child(3) { background-color: gold; }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: flex-start;
       }
-      .menu {
-        margin-top: 10px;
-        flex-wrap: wrap;
+
+      .main-section {
+        flex-direction: column;
+        text-align: center;
       }
-      h1 { font-size: 26px; }
-      p { font-size: 16px; }
+
+      .left {
+        max-width: 100%;
+      }
+
+      .right img {
+        max-width: 100%;
+        margin-top: 20px;
+      }
+
+      .left button {
+  margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      .section-white {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
-  </style>
+  
+
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #004225;
+      color: white;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .main-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+    .left {
+      max-width: 500px;
+    }
+    .left h1 {
+  text-align: left;
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .left p {
+  text-align: left;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .left button {
+  margin-bottom: 30px;
+  margin-left: 200px;
+  margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #f1c40f;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .right img {
+      max-width: 260px; margin: 0 auto; display: block; transform: translateX(-40px);
+      border-radius: 10px;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+      background-color: #f8f8f8;
+      color: black;
+    }
+    .card {
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .card:nth-child(1) { background-color: #f78da7; }
+    .card:nth-child(2) { background-color: #f39c12; }
+    .card:nth-child(3) { background-color: #f1c40f; }
+    .card i {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .logo {
+      height: 150px;
+      width: auto;
+    }
+  
+.left button {
+  margin-bottom: 30px;
+  margin-left: 200px;
+  margin-top: 20px;
+  display: block;
+  margin-left: 0;
+}
+
+.text-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding-left: 20px;
+}
+.text-button-wrapper button {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .left, .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-button-wrapper {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .left h1 {
+    font-size: 28px;
+  }
+
+  .left p {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .left button {
+  margin-bottom: 30px;
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px;
+  }
+
+  .left, .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-button-wrapper {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .left h1 {
+    font-size: 32px;
+  }
+
+  .left p {
+    font-size: 18px;
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .left button {
+  margin-bottom: 30px;
+    font-size: 18px;
+    padding: 14px 28px;
+  }
+
+  .right img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+.section-white {
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.section-white .card {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-white .card:nth-child(1) { background-color: pink; }
+.section-white .card:nth-child(2) { background-color: orange; }
+.section-white .card:nth-child(3) { background-color: gold; }
+
+@media (max-width: 768px) {
+  .section-white {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+  }
+}
+
+@media (min-width: 769px) {
+  header {
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    white-space: nowrap;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  nav a {
+    margin: 5px 10px;
+    font-size: 16px;
+  }
+
+  .left button {
+    margin-bottom: 80px;
+  }
+
+  .right img {
+    margin-top: 20px;
+  }
+}
+</style>
 </head>
 <body>
-  <header>
-    <img src="../logo_transparent.png" alt="Logo" class="logo" />
-    <div class="menu">
-      <nav>
-        <a href="../index.html" data-i18n="header_home">Home</a>
-        <a href="../shop/" data-i18n="header_shop">Shop</a>
-        <a href="../videos/" data-i18n="header_videos">Videos</a>
-        <a href="../articles/" data-i18n="header_articles">Articles</a>
-      </nav>
-      <select id="langSelect">
-        <option value="en">🇬🇧 EN</option>
-        <option value="pt">🇵🇹 PT</option>
-      </select>
-    </div>
-  </header>
-
-  <main>
-    <h1 data-i18n="shop_title">Our Wine Collection</h1>
-    <p data-i18n="shop_description">Browse and discover your next favorite bottle.</p>
-    <a href="../index.html" class="button" data-i18n="shop_back_button">Back to Home</a>
-  </main>
-
-  <script src="../script.js"></script>
-</body>
+<header>
+<img alt="Logo" class="logo" src="logo_transparent.png" style="height: 150px; width: auto;"/>
+<nav>
+<a href="./index.html"><span data-i18n="header_home">Home</span></a>
+<a href="./shop/"><span data-i18n="header_shop">Shop</span></a>
+<a href="./videos/"><span data-i18n="header_videos">Videos</span></a>
+<a href="./articles/"><span data-i18n="header_articles">Articles</span></a>
+</nav>
+<select id="langSelect" style="margin-left: 20px; padding: 5px;">
+<option value="en">🇬🇧 EN</option>
+<option value="pt">🇵🇹 PT</option>
+</select>
+</header>
+<section class="main-section">
+<div class="left">
+<h1><span data-i18n="hero_title">WINE ENTHUSIASTS, REJOICE!</span></h1>
+<p><em><span data-i18n="hero_subtitle">Uncork the joys of wine and the vine with Vinus Social Club</span></em></p>
+<a href="./shop/"><button><span data-i18n="shop_button">SHOP NOW</span></button></a>
+</div>
+<div class="right">
+<img alt="Woman with wine" src="imagem_mulher.jpg" style="max-width: 260px; margin: 0 auto; display: block; transform: translate(-40px, -60px); border-radius: 10px;"/>
+</div>
+</section>
+<section class="section-white">
+<div class="card"><a href="./shop/" style="text-decoration:none; color:inherit; display:inline-block; width:100%; height:100%;">
+<i>🛒</i>
+<h3><span data-i18n="card1_title">SHOP WINE</span></h3>
+<p><span data-i18n="card1_text">Explore our curated selection of fine wines.</span></p>
+</a></div>
+<div class="card"><a href="./videos/" style="text-decoration:none; color:inherit; display:inline-block; width:100%; height:100%;">
+<i>▶️</i>
+<h3><span data-i18n="card2_title">WATCH VIDEOS</span></h3>
+<p><span data-i18n="card2_text">Sip, swirl, and smile with our fun, informative wine videos.</span></p>
+</a></div>
+<div class="card"><a href="./articles/" style="text-decoration:none; color:inherit; display:inline-block; width:100%; height:100%;">
+<i>📄</i>
+<h3><span data-i18n="card3_title">READ ARTICLES</span></h3>
+<p><span data-i18n="card3_text">Get the latest grape on all things wine with our articles.</span></p>
+</a></div>
+</section>
+<script src="script.js"></script></body>
 </html>
