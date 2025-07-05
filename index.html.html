@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vinus Social Club</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #004225;
+      color: white;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 40px;
+    }
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .main-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px;
+      flex-wrap: wrap;
+    }
+    .left {
+      max-width: 500px;
+    }
+    .left h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+    .left p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    .left button {
+      padding: 12px 24px;
+      background-color: #f1c40f;
+      color: black;
+      font-weight: bold;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .right img {
+      max-width: 400px;
+      border-radius: 10px;
+    }
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 40px;
+      background-color: #f8f8f8;
+      color: black;
+    }
+    .card {
+      width: 250px;
+      text-align: center;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .card:nth-child(1) { background-color: #f78da7; }
+    .card:nth-child(2) { background-color: #f39c12; }
+    .card:nth-child(3) { background-color: #f1c40f; }
+    .card i {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .logo {
+      height: 100px;
+      width: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo_transparent.png" alt="Vinus Logo" class="logo"/>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Videos</a>
+      <a href="#">Articles</a>
+    </nav>
+  </header>
+
+  <section class="main-section">
+    <div class="left">
+      <h1>WINE ENTHUSIASTS, REJOICE!</h1>
+      <p><em>Uncork the joys of wine and the vine with Vinus Social Club</em></p>
+      <button>SHOP NOW</button>
+    </div>
+    <div class="right">
+      <img src="imagem_mulher.jpg" alt="Wine tasting woman"/>
+    </div>
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <i>🛒</i>
+      <h3>SHOP WINE</h3>
+      <p>Explore our curated selection of fine wines.</p>
+    </div>
+    <div class="card">
+      <i>▶️</i>
+      <h3>WATCH VIDEOS</h3>
+      <p>Sip, swirl, and smile with our fun, informative wine videos.</p>
+    </div>
+    <div class="card">
+      <i>📄</i>
+      <h3>READ ARTICLES</h3>
+      <p>Get the latest grape on all things wine with our articles.</p>
+    </div>
+  </section>
+
+</body>
+</html>
