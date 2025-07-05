@@ -400,38 +400,42 @@
 <header>
 <img alt="Logo" class="logo" src="logo_transparent.png" style="height: 150px; width: auto;"/>
 <nav>
-<a href="./index.html">Home</a>
-<a href="./shop/">Shop</a>
-<a href="./videos/">Videos</a>
-<a href="./articles/">Articles</a>
+<a href="./index.html"><span data-i18n="header_home">Home</span></a>
+<a href="./shop/"><span data-i18n="header_shop">Shop</span></a>
+<a href="./videos/"><span data-i18n="header_videos">Videos</span></a>
+<a href="./articles/"><span data-i18n="header_articles">Articles</span></a>
 </nav>
+<select id="langSelect" style="margin-left: 20px; padding: 5px;">
+<option value="en">🇬🇧 EN</option>
+<option value="pt">🇵🇹 PT</option>
+</select>
 </header>
 <section class="main-section">
 <div class="left">
-<h1>WINE ENTHUSIASTS, REJOICE!</h1>
-<p><em>Uncork the joys of wine and the vine with Vinus Social Club</em></p>
-<a href="./shop/"><button>SHOP NOW</button></a>
+<h1><span data-i18n="hero_title">WINE ENTHUSIASTS, REJOICE!</span></h1>
+<p><em><span data-i18n="hero_subtitle">Uncork the joys of wine and the vine with Vinus Social Club</span></em></p>
+<a href="./shop/"><button><span data-i18n="shop_button">SHOP NOW</span></button></a>
 </div>
 <div class="right">
 <img alt="Woman with wine" src="imagem_mulher.jpg" style="max-width: 260px; margin: 0 auto; display: block; transform: translate(-40px, -60px); border-radius: 10px;"/>
 </div>
 </section>
 <section class="section-white">
-<a href="./shop/" style="text-decoration:none; color:inherit; display:block; height:100%; width:100%;"><div class="card">
+<div class="card"><a href="./shop/" style="text-decoration:none; color:inherit; display:inline-block; width:100%; height:100%;">
 <i>🛒</i>
-<h3>SHOP WINE</h3>
-<p>Explore our curated selection of fine wines.</p>
-</div></a>
-<a href="./videos/" style="text-decoration:none; color:inherit; display:block; height:100%; width:100%;"><div class="card">
+<h3><span data-i18n="card1_title">SHOP WINE</span></h3>
+<p><span data-i18n="card1_text">Explore our curated selection of fine wines.</span></p>
+</a></div>
+<div class="card"><a href="./videos/" style="text-decoration:none; color:inherit; display:inline-block; width:100%; height:100%;">
 <i>▶️</i>
-<h3>WATCH VIDEOS</h3>
-<p>Sip, swirl, and smile with our fun, informative wine videos.</p>
-</div></a>
-<a href="./articles/" style="text-decoration:none; color:inherit; display:block; height:100%; width:100%;"><div class="card">
+<h3><span data-i18n="card2_title">WATCH VIDEOS</span></h3>
+<p><span data-i18n="card2_text">Sip, swirl, and smile with our fun, informative wine videos.</span></p>
+</a></div>
+<div class="card"><a href="./articles/" style="text-decoration:none; color:inherit; display:inline-block; width:100%; height:100%;">
 <i>📄</i>
-<h3>READ ARTICLES</h3>
-<p>Get the latest grape on all things wine with our articles.</p>
-</div></a>
+<h3><span data-i18n="card3_title">READ ARTICLES</span></h3>
+<p><span data-i18n="card3_text">Get the latest grape on all things wine with our articles.</span></p>
+</a></div>
 </section>
-</body>
+<script src="script.js"></script></body>
 </html>
