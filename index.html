@@ -186,7 +186,7 @@
       cursor: pointer;
     }
     .right img {
-      max-width: 260px; margin: 0 auto; display: block; 
+      max-width: 260px; margin: 0 auto; display: block; transform: translateX(-40px);
       border-radius: 10px;
     }
     .cards {
@@ -394,43 +394,23 @@
     margin-top: 20px;
   }
 }
-
-@media (max-width: 768px) {
-  .left button {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .right {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 768px) {
-  .right img {
-    display: block;
-    margin: 0 auto;
-  }
-}
 </style>
 </head>
 <body>
 <header>
 <img alt="Logo" class="logo" src="logo_transparent.png" style="height: 150px; width: auto;"/>
 <nav>
-<a href="#">Home</a>
-<a href="#">Shop</a>
-<a href="#">Videos</a>
-<a href="#">Articles</a>
+<a href="./index.html">Home</a>
+<a href="./shop/">Shop</a>
+<a href="./videos/">Videos</a>
+<a href="./articles/">Articles</a>
 </nav>
 </header>
 <section class="main-section">
 <div class="left">
 <h1>WINE ENTHUSIASTS, REJOICE!</h1>
 <p><em>Uncork the joys of wine and the vine with Vinus Social Club</em></p>
-<button>SHOP NOW</button>
+<a href="./shop/"><button>SHOP NOW</button></a>
 </div>
 <div class="right">
 <img alt="Woman with wine" src="imagem_mulher.jpg" style="max-width: 260px; margin: 0 auto; display: block; transform: translate(-40px, -60px); border-radius: 10px;"/>
