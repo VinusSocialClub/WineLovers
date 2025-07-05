@@ -9,64 +9,62 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #013220;
       font-family: Arial, sans-serif;
+      background-color: #013220;
     }
 
     header {
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding: 10px 30px;
+      padding: 20px 40px;
     }
 
     header img {
-      height: 100px;
-      margin-right: 20px;
-    }
-
-    nav {
-      display: flex;
-      gap: 20px;
+      height: 120px;
     }
 
     nav a {
       color: white;
       text-decoration: none;
+      margin-left: 20px;
       font-weight: bold;
+      font-size: 18px;
     }
 
     .hero {
       text-align: center;
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px 30px 20px;
     }
 
     .hero h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 1.2em;
+      font-size: 28px;
       margin-bottom: 20px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .hero button {
       background-color: #f8e71c;
       border: none;
       padding: 10px 20px;
+      font-size: 16px;
       font-weight: bold;
       cursor: pointer;
+      border-radius: 5px;
     }
 
     .image-section {
       display: flex;
       justify-content: center;
-      margin: 30px 0;
+      padding: 30px 20px;
     }
 
     .image-section img {
-      max-width: 90%;
+      max-width: 500px;
+      width: 100%;
       height: auto;
       border-radius: 10px;
     }
@@ -82,10 +80,11 @@
     .card {
       flex: 1;
       margin: 10px;
-      min-width: 200px;
+      min-width: 250px;
       border-radius: 15px;
       padding: 20px;
       color: black;
+      text-align: center;
     }
 
     .card.pink {
@@ -100,15 +99,14 @@
       background-color: gold;
     }
 
-    /* Responsivo para mobile/tablet */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
         align-items: flex-start;
       }
 
-      .image-section img {
-        max-width: 100%;
+      nav {
+        margin-top: 10px;
       }
 
       .section-white {
@@ -119,15 +117,23 @@
         border-radius: 0;
       }
 
-      body {
-        background-color: white;
+      .image-section img {
+        max-width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 22px;
+      }
+
+      .hero button {
+        font-size: 14px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo" />
+    <img src="logo.png" alt="Logo Vinus Social Club" />
     <nav>
       <a href="#">Home</a>
       <a href="#">Shop</a>
@@ -137,7 +143,7 @@
 
   <section class="hero">
     <h1>Uncork the joys of wine and the vine with Vinus Social Club</h1>
-    <p><button>SHOP NOW</button></p>
+    <button>SHOP NOW</button>
   </section>
 
   <section class="image-section">
