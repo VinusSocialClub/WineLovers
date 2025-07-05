@@ -20,7 +20,7 @@
     }
 
     header img {
-      height: 80px;
+      height: 100px;
       margin-right: 20px;
     }
 
@@ -71,7 +71,7 @@
       border-radius: 10px;
     }
 
-    .container {
+    .section-white {
       background-color: white;
       padding: 40px 20px;
       display: flex;
@@ -100,7 +100,7 @@
       background-color: gold;
     }
 
-    /* Responsivo para telemóveis */
+    /* Responsivo para mobile/tablet */
     @media (max-width: 768px) {
       header {
         flex-direction: column;
@@ -111,10 +111,11 @@
         max-width: 100%;
       }
 
-      .container {
+      .section-white {
         width: 100vw;
-        margin: 0;
-        padding: 0;
+        margin-left: calc(-50vw + 50%);
+        padding-left: 0;
+        padding-right: 0;
         border-radius: 0;
       }
 
@@ -143,7 +144,7 @@
     <img src="woman-wine.jpg" alt="Woman drinking wine" />
   </section>
 
-  <section class="container">
+  <section class="section-white">
     <div class="card pink">
       <h2>SHOP WINE</h2>
       <p>Explore our curated selection of fine wines.</p>
