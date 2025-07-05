@@ -183,6 +183,39 @@
     margin: 0 auto;
   }
 }
+
+
+.section-white {
+  background-color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.section-white .card {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-white .card:nth-child(1) { background-color: pink; }
+.section-white .card:nth-child(2) { background-color: orange; }
+.section-white .card:nth-child(3) { background-color: gold; }
+
+@media (max-width: 768px) {
+  .section-white {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+  }
+}
 </style>
 </head>
 <body>
@@ -201,7 +234,7 @@
 <img alt="Wine tasting woman" src="imagem_mulher.jpg"/>
 </div>
 </section>
-<section class="cards">
+<section class="section-white">
 <div class="card">
 <i>🛒</i>
 <h3>SHOP WINE</h3>
