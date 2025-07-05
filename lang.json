@@ -1,1 +1,32 @@
-{'en': {'header_home': 'Home', 'header_shop': 'Shop', 'header_videos': 'Videos', 'header_articles': 'Articles', 'hero_title': 'WINE ENTHUSIASTS, REJOICE!', 'hero_subtitle': 'Uncork the joys of wine and the vine with Vinus Social Club', 'shop_button': 'SHOP NOW'}, 'pt': {'header_home': 'Início', 'header_shop': 'Loja', 'header_videos': 'Vídeos', 'header_articles': 'Artigos', 'hero_title': 'ENTUSIASTAS DO VINHO, ALEGREM-SE!', 'hero_subtitle': 'Desfrute das alegrias do vinho com o Vinus Social Club', 'shop_button': 'COMPRAR'}}
+{
+  "en": {
+    "header_home": "Home",
+    "header_shop": "Shop",
+    "header_videos": "Videos",
+    "header_articles": "Articles",
+    "hero_title": "WINE ENTHUSIASTS, REJOICE!",
+    "hero_subtitle": "Uncork the joys of wine and the vine with Vinus Social Club",
+    "shop_button": "SHOP NOW",
+    "card1_title": "SHOP WINE",
+    "card1_text": "Explore our curated selection of fine wines.",
+    "card2_title": "WATCH VIDEOS",
+    "card2_text": "Sip, swirl, and smile with our fun, informative wine videos.",
+    "card3_title": "READ ARTICLES",
+    "card3_text": "Get the latest grape on all things wine with our articles."
+  },
+  "pt": {
+    "header_home": "In\u00edcio",
+    "header_shop": "Loja",
+    "header_videos": "V\u00eddeos",
+    "header_articles": "Artigos",
+    "hero_title": "ENTUSIASTAS DO VINHO, ALEGREM-SE!",
+    "hero_subtitle": "Desfrute das alegrias do vinho com o Vinus Social Club",
+    "shop_button": "COMPRAR",
+    "card1_title": "COMPRAR VINHO",
+    "card1_text": "Explore a nossa sele\u00e7\u00e3o exclusiva de vinhos.",
+    "card2_title": "VER V\u00cdDEOS",
+    "card2_text": "Saboreie e divirta-se com os nossos v\u00eddeos informativos sobre vinho.",
+    "card3_title": "LER ARTIGOS",
+    "card3_text": "Fique a par de tudo sobre vinhos com os nossos artigos."
+  }
+}
