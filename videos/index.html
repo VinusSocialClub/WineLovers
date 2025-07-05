@@ -1,14 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Videos | Vinus Social Club</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Wine Collection | Vinus Social Club</title>
+<style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      padding: 0;
       font-family: Arial, sans-serif;
       background-color: #004225;
       color: white;
@@ -19,15 +19,31 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
+      flex-wrap: wrap;
     }
-    .logo { height: 100px; }
-    nav { display: flex; gap: 20px; }
+    .logo {
+      height: 140px;
+      object-fit: contain;
+    }
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
       font-size: 18px;
       white-space: nowrap;
+    }
+    select {
+      margin-left: 20px;
+      padding: 5px;
     }
     main {
       padding: 60px 20px;
@@ -54,7 +70,7 @@
         flex-direction: column;
         align-items: flex-start;
       }
-      nav {
+      .menu {
         margin-top: 10px;
         flex-wrap: wrap;
       }
@@ -64,20 +80,22 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="../logo_transparent.png" alt="Logo" class="logo" />
-    <nav>
-      <a href="../index.html">Home</a>
-      <a href="../shop/">Shop</a>
-      <a href="../videos/">Videos</a>
-      <a href="../articles/">Articles</a>
-    </nav>
-  </header>
-
-  <main>
-    <h1>Secção de Vídeos</h1>
-    <p>Aqui vais encontrar vídeos divertidos, educativos e tudo sobre vinho. Em breve disponíveis!</p>
-    <a href="../index.html" class="button">Voltar à página inicial</a>
-  </main>
+<header>
+<img alt="Logo" class="logo" src="../logo_transparent.png"/>
+<div class="menu">
+<nav>
+<a data-i18n="header_home" href="../index.html">Home</a>
+<a data-i18n="header_shop" href="../shop/">Shop</a>
+<a data-i18n="header_videos" href="../videos/">Videos</a>
+<a data-i18n="header_articles" href="../articles/">Articles</a>
+</nav>
+<select id="langSelect">
+<option value="en">🇬🇧 EN</option>
+<option value="pt">🇵🇹 PT</option>
+</select>
+</div>
+</header>
+<main><h1 data-i18n="videos_title">Videos Section</h1><p data-i18n="videos_description">Fun and educational wine content coming soon.</p><a class="button" data-i18n="videos_back_button" href="../index.html">Back to Home</a></main>
+<script src="../script.js"></script>
 </body>
 </html>
