@@ -1,222 +1,161 @@
 
 <!DOCTYPE html>
-
-<html lang="pt">
+<html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vinus Social Club</title>
-<style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinus Social Club</title>
+  <style>
     body {
       margin: 0;
+      padding: 0;
+      background-color: #013220;
       font-family: Arial, sans-serif;
-      background-color: #004225;
-      color: white;
     }
+
     header {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      padding: 20px 40px;
+      padding: 10px 30px;
     }
+
+    header img {
+      height: 80px;
+      margin-right: 20px;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+
     nav a {
-      margin: 0 15px;
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-    .main-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 40px;
-      flex-wrap: wrap;
+
+    .hero {
+      text-align: center;
+      color: white;
+      padding: 40px 20px;
     }
-    .left {
-      max-width: 500px;
-    }
-    .left h1 {
-  text-align: left;
-      font-size: 48px;
+
+    .hero h1 {
+      font-size: 2em;
       margin-bottom: 10px;
     }
-    .left p {
-  text-align: left;
-      font-size: 18px;
+
+    .hero p {
+      font-size: 1.2em;
       margin-bottom: 20px;
     }
-    .left button {
-  margin-left: 200px;
-  margin-top: 10px;
-      padding: 12px 24px;
-      background-color: #f1c40f;
-      color: black;
-      font-weight: bold;
+
+    .hero button {
+      background-color: #f8e71c;
       border: none;
-      border-radius: 4px;
+      padding: 10px 20px;
+      font-weight: bold;
       cursor: pointer;
     }
-    .right img {
-      max-width: 260px; margin: 0 auto; display: block; transform: translate(-40px, -60px);
-      border-radius: 10px;
-    }
-    .cards {
+
+    .image-section {
       display: flex;
       justify-content: center;
-      gap: 30px;
-      padding: 40px;
-      background-color: #f8f8f8;
+      margin: 30px 0;
+    }
+
+    .image-section img {
+      max-width: 90%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      flex: 1;
+      margin: 10px;
+      min-width: 200px;
+      border-radius: 15px;
+      padding: 20px;
       color: black;
     }
-    .card {
-      width: 250px;
-      text-align: center;
-      padding: 20px;
-      border-radius: 8px;
+
+    .card.pink {
+      background-color: pink;
     }
-    .card:nth-child(1) { background-color: #f78da7; }
-    .card:nth-child(2) { background-color: #f39c12; }
-    .card:nth-child(3) { background-color: #f1c40f; }
-    .card i {
-      font-size: 24px;
-      margin-bottom: 10px;
+
+    .card.orange {
+      background-color: orange;
     }
-    .logo {
-      height: 150px;
-      width: auto;
+
+    .card.yellow {
+      background-color: gold;
     }
-  
-.left button {
-  margin-left: 200px;
-  margin-top: 10px;
-  display: block;
-  margin-left: 0;
-}
 
-.text-button-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  padding-left: 20px;
-}
-.text-button-wrapper button {
-  margin: 0;
-}
+    /* Responsivo para telemóveis */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    padding: 20px;
-    gap: 40px;
-  }
+      .image-section img {
+        max-width: 100%;
+      }
 
-  .left, .right {
-    width: 100%;
-    text-align: center;
-  }
+      .container {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+      }
 
-  .text-button-wrapper {
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .left h1 {
-    font-size: 28px;
-  }
-
-  .left p {
-    font-size: 16px;
-    max-width: 90%;
-    margin: 0 auto;
-  }
-
-  .left button {
-    font-size: 16px;
-    padding: 12px 24px;
-  }
-
-  .right img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 1024px) {
-  .container {
-    flex-direction: column;
-    gap: 40px;
-    padding: 30px;
-  }
-
-  .left, .right {
-    width: 100%;
-    text-align: center;
-  }
-
-  .text-button-wrapper {
-    align-items: center;
-    padding-left: 0;
-  }
-
-  .left h1 {
-    font-size: 32px;
-  }
-
-  .left p {
-    font-size: 18px;
-    max-width: 95%;
-    margin: 0 auto;
-  }
-
-  .left button {
-    font-size: 18px;
-    padding: 14px 28px;
-  }
-
-  .right img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-}
-</style>
+      body {
+        background-color: white;
+      }
+    }
+  </style>
 </head>
 <body>
-<header>
-<img alt="Vinus Logo" class="logo" src="logo_transparent.png"/>
-<nav>
-<a href="#">Home</a>
-<a href="#">Shop</a>
-<a href="#">Videos</a>
-<a href="#">Articles</a>
-</nav>
-</header>
-<section class="main-section">
-<div class="left"><div class="text-button-wrapper"><h1>WINE ENTHUSIASTS, REJOICE!</h1><p><em>Uncork the joys of wine and the vine with Vinus Social Club</em></p><button>SHOP NOW</button></div></div>
-<div class="right">
-<img alt="Wine tasting woman" src="imagem_mulher.jpg"/>
-</div>
-</section>
-<section class="cards">
-<div class="card">
-<i>🛒</i>
-<h3>SHOP WINE</h3>
-<p>Explore our curated selection of fine wines.</p>
-</div>
-<div class="card">
-<i>▶️</i>
-<h3>WATCH VIDEOS</h3>
-<p>Sip, swirl, and smile with our fun, informative wine videos.</p>
-</div>
-<div class="card">
-<i>📄</i>
-<h3>READ ARTICLES</h3>
-<p>Get the latest grape on all things wine with our articles.</p>
-</div>
-</section>
+  <header>
+    <img src="logo.png" alt="Logo" />
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Uncork the joys of wine and the vine with Vinus Social Club</h1>
+    <p><button>SHOP NOW</button></p>
+  </section>
+
+  <section class="image-section">
+    <img src="woman-wine.jpg" alt="Woman drinking wine" />
+  </section>
+
+  <section class="container">
+    <div class="card pink">
+      <h2>SHOP WINE</h2>
+      <p>Explore our curated selection of fine wines.</p>
+    </div>
+    <div class="card orange">
+      <h2>WATCH VIDEOS</h2>
+      <p>Sip, swirl, and smile with our fun, informative wine videos.</p>
+    </div>
+    <div class="card yellow">
+      <h2>READ ARTICLES</h2>
+      <p>Get the latest grape on all things wine with our articles.</p>
+    </div>
+  </section>
 </body>
 </html>
