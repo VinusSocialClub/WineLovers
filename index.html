@@ -186,7 +186,7 @@
       cursor: pointer;
     }
     .right img {
-      max-width: 260px; margin: 0 auto; display: block; transform: translateX(-40px);
+      max-width: 260px; margin: 0 auto; display: block; 
       border-radius: 10px;
     }
     .cards {
@@ -405,6 +405,13 @@
   .right {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .right img {
+    display: block;
+    margin: 0 auto;
   }
 }
 </style>
