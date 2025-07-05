@@ -103,6 +103,44 @@
 .text-button-wrapper button {
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .left, .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-button-wrapper {
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .left h1 {
+    font-size: 28px;
+  }
+
+  .left p {
+    font-size: 16px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .left button {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+
+  .right img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 </style>
 </head>
 <body>
