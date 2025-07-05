@@ -2,6 +2,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const selector = document.getElementById("langSelect");
 
+  if (!selector) return; // Evita erro se o seletor não existir
+
   function updateLanguage(langData, lang) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
@@ -18,5 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
       selector.addEventListener("change", e => {
         updateLanguage(langData, e.target.value);
       });
-    });
+    })
+    .catch(err => console.error("Erro ao carregar lang.json:", err));
 });
