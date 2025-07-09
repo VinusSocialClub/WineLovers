@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Our Wine Collection | Vinus Social Club</title><link href="/WineLovers/favicon_final_blackbg.ico" rel="icon" type="image/x-icon"/>
-<style>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Wine Collection | Vinus Social Club</title>
+  <link rel="icon" href="/WineLovers/favicon_final_blackbg.ico" type="image/x-icon" />
+  <style>
     * { box-sizing: border-box; }
     body {
       margin: 0;
@@ -19,27 +19,17 @@
       justify-content: space-between;
       align-items: center;
       padding: 20px 40px;
-      flex-wrap: wrap;
     }
     .logo {
-      height: 140px;
-      object-fit: contain;
-    }
-    .menu {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    nav {
-      display: flex;
-      gap: 20px;
+      height: 150px;
+      width: auto;
     }
     nav a {
       color: white;
       text-decoration: none;
+      margin-left: 20px;
       font-weight: bold;
       font-size: 18px;
-      white-space: nowrap;
     }
     select {
       margin-left: 20px;
@@ -65,51 +55,53 @@
       text-decoration: none;
       border-radius: 5px;
     }
+
     @media (max-width: 768px) {
       header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
       }
-      .menu {
-        margin-top: 10px;
+      nav {
+        width: 100%;
+        display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
       }
-      h1 { font-size: 26px; }
-      p { font-size: 16px; }
+      nav a {
+        margin: 5px 10px;
+        font-size: 16px;
+      }
+      #langSelect {
+        margin-top: 10px;
+      }
     }
-  
-
-@media (max-width: 768px) {
-  nav {
-    justify-content: center;
-  }
-}
-
-</style>
+  </style>
 </head>
 <body>
+
 <header>
-<img alt="Logo" class="logo" src="../logo_transparent.png"/>
-<div class="menu">
-<nav>
-<a data-i18n="header_home" href="../index.html">Home</a>
-<a data-i18n="header_shop" href="../shop/">Shop</a>
-<a data-i18n="header_videos" href="../videos/">Videos</a>
-<a data-i18n="header_articles" href="../articles/">Articles</a>
-</nav>
-<select id="langSelect">
-<option value="en">🇬🇧 EN</option>
-<option value="pt">🇵🇹 PT</option>
-<option value="fr">🇫🇷 FR</option>
-<option value="de">🇩🇪 DE</option>
-</select>
-</div>
+  <img src="../logo_transparent.png" alt="Logo" class="logo" />
+  <nav>
+    <a href="../index.html"><span data-i18n="header_home">Home</span></a>
+    <a href="../shop/"><span data-i18n="header_shop">Shop</span></a>
+    <a href="../videos/"><span data-i18n="header_videos">Videos</span></a>
+    <a href="../articles/"><span data-i18n="header_articles">Articles</span></a>
+    <select id="langSelect">
+      <option value="en">🇬🇧 EN</option>
+      <option value="pt">🇵🇹 PT</option>
+      <option value="fr">🇫🇷 FR</option>
+      <option value="de">🇩🇪 DE</option>
+    </select>
+  </nav>
 </header>
+
 <main>
-<h1 data-i18n="shop_title">Our Wine Collection</h1>
-<p data-i18n="shop_description">Browse and discover your next favorite bottle.</p>
-<a class="button" data-i18n="shop_back_button" href="../index.html">Back to Home</a>
+  <h1 data-i18n="shop_title">Our Wine Collection</h1>
+  <p data-i18n="shop_description">Browse and discover your next favorite bottle.</p>
+  <a href="../index.html" class="button" data-i18n="shop_back_button">Back to Home</a>
 </main>
+
 <script src="../script.js"></script>
 </body>
 </html>
