@@ -19,6 +19,8 @@ const translations = {
     video_wine_tourism: "Wine Tourism",
     video_vinus_partys: "Vinus Partys",
     watch_button: "WATCH"
+    videos_title: "Videos Section",
+    videos_description: "Choose a theme to explore our video content.",
   },
   pt: {
     header_home: "Início",
@@ -39,6 +41,8 @@ const translations = {
     video_wine_tourism: "Enoturismo",
     video_vinus_partys: "Festas Vinus",
     watch_button: "VER"
+    videos_title: "Secção de Vídeos",
+    videos_description: "Escolha um tema para explorar o nosso conteúdo em vídeo.",
   },
   fr: {
     header_home: "Accueil",
@@ -59,6 +63,8 @@ const translations = {
     video_wine_tourism: "Tourisme viticole",
     video_vinus_partys: "Fêtes Vinus",
     watch_button: "REGARDER"
+    videos_title: "Section Vidéos",
+    videos_description: "Choisissez un thème pour explorer nos vidéos.",
   },
   de: {
     header_home: "Startseite",
@@ -79,6 +85,8 @@ const translations = {
     video_wine_tourism: "Weintourismus",
     video_vinus_partys: "Vinus-Partys",
     watch_button: "ANSCHAUEN"
+    videos_title: "Videoabschnitt",
+    videos_description: "Wähle ein Thema, um unsere Videoinhalte zu entdecken.",
   }
 };
 
