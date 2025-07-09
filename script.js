@@ -115,3 +115,14 @@ document.getElementById("langSelect").addEventListener("change", function () {
     }
   });
 });
+
+// Tradução inicial ao carregar a página
+document.addEventListener("DOMContentLoaded", function () {
+  const initialLang = document.getElementById("langSelect").value;
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[initialLang] && translations[initialLang][key]) {
+      el.textContent = translations[initialLang][key];
+    }
+  });
+});
