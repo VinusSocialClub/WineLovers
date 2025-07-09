@@ -78,7 +78,38 @@
       p { font-size: 16px; }
     }
   </style>
-</head>
+<style>
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.video-thumb {
+  position: relative;
+  background: #000;
+  height: 0;
+  padding-bottom: 56.25%;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.video-thumb a {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  background: rgba(0,0,0,0.5);
+  text-decoration: none;
+  font-size: 18px;
+}
+.video-thumb a:hover {
+  background: rgba(0,0,0,0.7);
+}
+</style></head>
 <body>
 <header>
 <img alt="Logo" class="logo" src="../logo_transparent.png"/>
@@ -92,15 +123,43 @@
 <select id="langSelect"><option value="en">🇬🇧 EN</option><option value="pt">🇵🇹 PT</option><option value="fr">🇫🇷 FR</option><option value="de">🇩🇪 DE</option></select>
 </div>
 </header>
-
 <main>
 <h1 data-i18n="video_vinus_partys">Vinus Partys</h1>
-<p>🎉 Em breve: vídeos das festas mais incríveis organizadas pelo Vinus Social Club.</p>
-<div class="video-placeholder" style="margin-top: 40px; text-align: center;">
-<em>Espaço reservado para vídeos embebidos (Instagram ou YouTube)</em>
+<p>🎉 Revive os melhores momentos das festas Vinus. Clica nos vídeos para ver no Instagram!</p>
+<div class="video-grid">
+<div class="video-thumb">
+<a href="https://www.instagram.com/reel/C0wdfzls1HK/" rel="noopener noreferrer" target="_blank">▶ Ver no Instagram</a>
+</div>
+
+<div class="video-thumb">
+<a href="https://www.instagram.com/reel/C0L-CnXMK3n/" rel="noopener noreferrer" target="_blank">▶ Ver no Instagram</a>
+</div>
+
+<div class="video-thumb">
+<a href="https://www.instagram.com/reel/C8KbAbuI0A7/" rel="noopener noreferrer" target="_blank">▶ Ver no Instagram</a>
+</div>
+
+<div class="video-thumb">
+<a href="https://www.instagram.com/reel/DC2LU6yscRV/" rel="noopener noreferrer" target="_blank">▶ Ver no Instagram</a>
+</div>
+
+<div class="video-thumb">
+<a href="https://www.instagram.com/reel/DHBUusftVCr/" rel="noopener noreferrer" target="_blank">▶ Ver no Instagram</a>
+</div>
+
+<div class="video-thumb">
+<a href="https://www.instagram.com/reel/DH5nEXNNAut/" rel="noopener noreferrer" target="_blank">▶ Ver no Instagram</a>
+</div>
+
+<div class="video-thumb">
+<a href="https://www.instagram.com/reel/DA_fd74osUy/" rel="noopener noreferrer" target="_blank">▶ Ver no Instagram</a>
+</div>
+
+<div class="video-thumb">
+<a href="https://www.instagram.com/reel/C_LQ7WDtJhX/" rel="noopener noreferrer" target="_blank">▶ Ver no Instagram</a>
+</div>
 </div>
 </main>
-
 <style>
 .video-grid {
   display: grid;
