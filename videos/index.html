@@ -6,78 +6,57 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Our Wine Collection | Vinus Social Club</title><link href="/WineLovers/favicon_final_blackbg.ico" rel="icon" type="image/x-icon"/>
 <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #004225;
-      color: white;
-      overflow-x: hidden;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      flex-wrap: wrap;
-    }
-    .logo {
-      height: 140px;
-      object-fit: contain;
-    }
-    .menu {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-    nav {
-      display: flex;
-      gap: 20px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      white-space: nowrap;
-    }
-    select {
-      margin-left: 20px;
-      padding: 5px;
-    }
-    main {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    h1 { font-size: 36px; margin-bottom: 20px; }
-    p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-    a.button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #f1c40f;
-      color: black;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      .menu {
-        margin-top: 10px;
-        flex-wrap: wrap;
-      }
-      h1 { font-size: 26px; }
-      p { font-size: 16px; }
-    }
-  </style>
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.video-card {
+  position: relative;
+  padding: 0;
+  height: auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+.video-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.video-card h2,
+.video-card .button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  color: white;
+}
+.video-card h2 {
+  top: 30%;
+  font-size: 24px;
+  margin: 0;
+}
+.video-card .button {
+  top: 62%;
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.video-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 1;
+}
+</style>
 <style>
 .video-card {
   position: relative;
@@ -164,7 +143,6 @@
 </div>
 </div>
 </main>
-
 <style>
 .video-grid {
   display: grid;
@@ -217,7 +195,6 @@
   z-index: 1;
 }
 </style>
-
 <script src="../script.js"></script>
 </body>
 </html>
