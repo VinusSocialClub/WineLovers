@@ -119,10 +119,13 @@ function translate(lang) {
 }
 
 document.getElementById("langSelect").addEventListener("change", function () {
-  translate(this.value);
+  const selectedLang = this.value;
+  localStorage.setItem("preferredLang", selectedLang); // Guardar idioma
+  translate(selectedLang);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const initialLang = document.getElementById("langSelect").value;
-  translate(initialLang);
+  const savedLang = localStorage.getItem("preferredLang") || "en"; // Usar idioma guardado ou EN por defeito
+  document.getElementById("langSelect").value = savedLang;
+  translate(savedLang);
 });
