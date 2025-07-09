@@ -89,15 +89,62 @@
 <a data-i18n="header_videos" href="../videos/">Videos</a>
 <a data-i18n="header_articles" href="../articles/">Articles</a>
 </nav>
-<select id="langSelect">
-<option value="en">🇬🇧 EN</option>
-<option value="pt">🇵🇹 PT</option>
-<option value="fr">🇫🇷 FR</option>
-<option value="de">🇩🇪 DE</option>
-</select>
+<select id="langSelect"><option value="en">EN</option><option value="pt">PT</option><option value="fr">FR</option><option value="de">DE</option></select>
 </div>
 </header>
-<main><h1 data-i18n="videos_title">Videos Section</h1><p data-i18n="videos_description">Fun and educational wine content coming soon.</p><a class="button" data-i18n="videos_back_button" href="../index.html">Back to Home</a></main>
+
+<main>
+<h1 data-i18n="videos_title">Videos Section</h1>
+<p data-i18n="videos_description">Choose a theme to explore our video content.</p>
+<div class="video-grid">
+<div class="video-card">
+<img alt="Wine Education" src="../images/education.jpg"/>
+<h2 data-i18n="video_education">Wine Education</h2>
+<a class="button" data-i18n="watch_button" href="education.html">WATCH</a>
+</div>
+<div class="video-card">
+<img alt="Wine Tasting" src="../images/tasting.jpg"/>
+<h2 data-i18n="video_tasting">Wine Tasting</h2>
+<a class="button" data-i18n="watch_button" href="tasting.html">WATCH</a>
+</div>
+<div class="video-card">
+<img alt="Wine Tourism" src="../images/tourism.jpg"/>
+<h2 data-i18n="video_tourism">Wine Tourism</h2>
+<a class="button" data-i18n="watch_button" href="tourism.html">WATCH</a>
+</div>
+<div class="video-card">
+<img alt="Vinus Partys" src="../images/party.jpg"/>
+<h2 data-i18n="video_partys">Vinus Partys</h2>
+<a class="button" data-i18n="watch_button" href="partys.html">WATCH</a>
+</div>
+</div>
+</main>
+<style>
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.video-card {
+  background-color: #01391f;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+.video-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.video-card h2 {
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+</style>
+
 <script src="../script.js"></script>
 </body>
 </html>
