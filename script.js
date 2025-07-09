@@ -1,4 +1,3 @@
-<script>
 const translations = {
   en: {
     header_home: "Home",
@@ -122,9 +121,4 @@ document.getElementById("langSelect").addEventListener("change", function () {
 document.addEventListener("DOMContentLoaded", function () {
   const initialLang = document.getElementById("langSelect").value;
   translate(initialLang);
-});
-</script>
-
-    }
-  });
 });
