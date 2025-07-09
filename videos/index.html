@@ -119,6 +119,12 @@
 </div>
 </main>
 <style>
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
 .video-card {
   position: relative;
   padding: 0;
@@ -140,18 +146,19 @@
   transform: translateX(-50%);
   z-index: 2;
   color: white;
+  text-align: center;
 }
 .video-card h2 {
-  top: 28%;
-  font-size: 24px;
+  top: 25%;
+  font-size: 20px;
   margin: 0;
 }
 .video-card .button {
-  top: 62%;
+  top: 60%;
   background: transparent;
   border: 2px solid white;
   color: white;
-  padding: 10px 24px;
+  padding: 10px 20px;
   border-radius: 5px;
   font-weight: bold;
   text-decoration: none;
@@ -160,7 +167,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0,0,0,0.35);
   z-index: 1;
 }
 </style>
