@@ -66,6 +66,40 @@
       border-radius: 5px;
     }
     @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav {
+    justify-content: center;
+    width: 100%;
+  }
+
+  nav a {
+    margin: 5px 10px;
+    font-size: 16px;
+  }
+
+  #langSelect {
+    margin-top: 10px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
       header {
         flex-direction: column;
         align-items: flex-start;
@@ -90,10 +124,10 @@
 <a data-i18n="header_articles" href="../articles/">Articles</a>
 </nav>
 <select id="langSelect">
-<option value="en">🇬🇧 EN</option>
-<option value="pt">🇵🇹 PT</option>
-<option value="fr">🇫🇷 FR</option>
-<option value="de">🇩🇪 DE</option>
+<option value="en">EN</option>
+<option value="pt">PT</option>
+<option value="fr">FR</option>
+<option value="de">DE</option>
 </select>
 </div>
 </header>
