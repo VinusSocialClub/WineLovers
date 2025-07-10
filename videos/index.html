@@ -499,7 +499,66 @@
     margin-top: 20px;
   }
 }
+   .footer {
+  background-color: #004225;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 60px;
+  font-size: 14px;
+  text-align: center;
+}
 
+.footer-left {
+  flex: 1 1 200px;
+}
+
+.footer-section {
+  flex: 1 1 150px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #f1c40f;
+}
+
+.footer-section p {
+  margin: 4px 0;
+}
+
+.social-icons a img {
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section,
+  .footer-left {
+    flex: unset;
+  }
+
+  .social-icons a img {
+    margin: 0 8px;
+  }
+   .footer {
+     text-align: center;
+     justify-content: center;
+}
   html { overflow-y: scroll; }
 </style>
 </head>
@@ -603,6 +662,31 @@
   background: rgba(0,0,0,0.35);
   z-index: 1;
 }</style>
+   <footer class="footer">
+  <div class="footer-left">
+    <p data-i18n="footer_rights"><strong>©2025 Vinus Social Club,<br/>All rights reserved.</strong></p>
+  </div>
+  <div class="footer-section">
+    <h4 data-i18n="footer_about_us">About Us</h4>
+    <p data-i18n="footer_our_story">Our Story</p>
+  </div>
+  <div class="footer-section">
+    <h4 data-i18n="footer_customer_service">Customer Service</h4>
+    <p data-i18n="footer_contact">Contact Us</p>
+    <p data-i18n="footer_shipping">Shipping & Returns</p>
+    <p data-i18n="footer_faq">FAQ</p>
+  </div>
+  <div class="footer-section">
+    <h4 data-i18n="footer_follow">Follow Us</h4>
+    <div class="social-icons">
+  <a href="https://www.instagram.com/vinussocialclub/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" width="24" height="24"/></a>
+  <a href="https://www.facebook.com/vinussocialclub/" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" width="24" height="24" style="filter: brightness(0) invert(1);" /></a>
+  <a href="https://pt.linkedin.com/in/vinus-social-club-a7b750297" target="_blank" rel="noopener noreferrer">
+    <img src="https://cdn-icons-png.flaticon.com/24/1384/1384014.png" alt="LinkedIn" width="24" height="24"/></a>
+</div>
+</footer>
 <script src="../script.js"></script>
 </body>
 </html>
