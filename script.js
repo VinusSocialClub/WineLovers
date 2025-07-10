@@ -29,7 +29,15 @@ const translations = {
     back_home: "HOMEPAGE",
     videos_title: "Videos Section",
     videos_description: "Choose a theme to explore our video content.",
-    go_back: "GO BACK"
+    go_back: "GO BACK",
+    footer_about_us: "About Us",
+    footer_our_story: "Our Story",
+    footer_customer_service: "Customer Service",
+    footer_contact: "Contact Us",
+    footer_shipping: "Shipping & Returns", 
+    footer_faq: "FAQ",
+    footer_follow: "Follow Us",
+    footer_copyright: "©2025 Vinus Social Club,<br/>All rights reserved.",
   },
   pt: {
     header_home: "Início",
@@ -61,7 +69,15 @@ const translations = {
     back_home: "PÁGINA INICIAL",
     videos_title: "Secção de Vídeos",
     videos_description: "Escolhe um tema para explorar o nosso conteúdo em vídeo.",
-    go_back: "VOLTAR"
+    go_back: "VOLTAR",
+    footer_about_us: "Sobre Nós",
+    footer_our_story: "A Nossa História",
+    footer_customer_service: "Apoio ao Cliente",
+    footer_contact: "Contacte-nos",
+    footer_shipping: "Envios e Devoluções",
+    footer_faq: "Perguntas Frequentes",
+    footer_follow: "Siga-nos",
+    footer_copyright: "©2025 Vinus Social Club,<br/>Todos os direitos reservados.",
   },
   fr: {
     header_home: "Accueil",
@@ -93,7 +109,15 @@ const translations = {
     back_home: "PAGE D’ACCUEIL",
     videos_title: "Section Vidéos",
     videos_description: "Choisissez un thème pour explorer notre contenu vidéo.",
-    go_back: "RETOUR"
+    go_back: "RETOUR",
+    footer_about_us: "À Propos",
+    footer_our_story: "Notre Histoire",
+    footer_customer_service: "Service Client",
+    footer_contact: "Contactez-nous",
+    footer_shipping: "Livraison & Retours",
+    footer_faq: "FAQ",
+    footer_follow: "Suivez-nous",
+    footer_copyright: "©2025 Vinus Social Club,<br/>Tous droits réservés.",
   },
   de: {
     header_home: "Startseite",
@@ -125,7 +149,15 @@ const translations = {
     back_home: "STARTSEITE",
     videos_title: "Videobereich",
     videos_description: "Wähle ein Thema, um unsere Videoinhalte zu entdecken.",
-    go_back: "ZURÜCK"
+    go_back: "ZURÜCK",
+    footer_about_us: "Über Uns",
+    footer_our_story: "Unsere Geschichte",
+    footer_customer_service: "Kundendienst",
+    footer_contact: "Kontaktieren Sie uns",
+    footer_shipping: "Versand & Rückgabe",
+    footer_faq: "FAQ",
+    footer_follow: "Folgen Sie uns",
+    footer_copyright: "©2025 Vinus Social Club,<br/>Alle Rechte vorbehalten.",
   }
 };
 
