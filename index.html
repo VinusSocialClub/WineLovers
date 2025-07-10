@@ -501,24 +501,22 @@
 }
 
   html { overflow-y: scroll; }
-   .footer {
-  background-color: #002a18;
+   
+ .footer {
+  background-color: #004225; /* cor igual ao fundo do site */
   color: white;
-  padding: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 30px;
-  margin-top: 60px;
+  padding: 40px 20px;
   font-size: 14px;
-}
-
-.footer-left {
-  flex: 1 1 200px;
+  border-top: 2px solid #f1c40f;
 }
 
 .footer-section {
-  flex: 1 1 150px;
+  flex: 1;
+  min-width: 180px;
+  margin: 10px 20px;
 }
 
 .footer-section h4 {
@@ -529,34 +527,29 @@
 
 .footer-section p {
   margin: 4px 0;
+  color: white;
 }
 
-.social-icons a img {
-  margin-right: 10px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
+.footer-left {
+  flex: 1;
+  min-width: 180px;
+  margin: 10px 20px;
+  font-size: 14px;
+  color: white;
 }
 
-.social-icons a img:hover {
-  transform: scale(1.2);
+.footer .social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
 }
 
-@media (max-width: 768px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  .footer-section,
-  .footer-left {
-    flex: unset;
-  }
-
-  .social-icons a img {
-    margin: 0 8px;
-  }
+.footer .social-icons img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(100);
 }
+
 
 </style>
 </head>
