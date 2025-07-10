@@ -1,3 +1,4 @@
+
 const translations = {
   en: {
     header_home: "Home",
@@ -18,15 +19,6 @@ const translations = {
     video_wine_tourism: "Wine Tourism",
     video_vinus_partys: "Vinus Partys",
     watch_button: "WATCH",
-    go_back: "GO BACK",
-    videos_title: "Videos Section",
-    videos_description: "Choose a theme to explore our video content.",
-    partys_description: "🎉 Relive the best moments of Vinus parties with our vibrant videos.",
-    education_description: "📚 Discover wine tips, curiosities and knowledge in our educational videos.",
-    tourism_description: "🌍 Join our travels and explore the finest wine regions with us.",
-    tasting_description: "🍷 Learn and enjoy the art of wine tasting with our exclusive clips.",
-    shop_title: "Shop",
-    shop_description: "Find the perfect wine and products to elevate your taste."
     homepage_button: "HOMEPAGE"
   },
   pt: {
@@ -48,16 +40,7 @@ const translations = {
     video_wine_tourism: "Enoturismo",
     video_vinus_partys: "Festas Vinus",
     watch_button: "VER",
-    go_back: "VOLTAR",
-    videos_title: "Secção de Vídeos",
-    videos_description: "Escolha um tema para explorar o nosso conteúdo em vídeo.",
-    partys_description: "🎉 Revive os melhores momentos das festas Vinus com os nossos vídeos vibrantes.",
-    education_description: "📚 Descobre dicas, curiosidades e conhecimento vínico nos nossos vídeos educativos.",
-    tourism_description: "🌍 Acompanha as nossas viagens e explorações pelas melhores regiões vinícolas.",
-    tasting_description: "🍷 Aprende e aprecia a arte da prova de vinhos com os nossos vídeos exclusivos.",
-    shop_title: "Loja",
-    shop_description: "Encontra o vinho perfeito e produtos para elevar o teu gosto."
-    homepage_button: "PÁGINA INICIAL"
+    homepage_button: "INÍCIO"
   },
   fr: {
     header_home: "Accueil",
@@ -78,16 +61,7 @@ const translations = {
     video_wine_tourism: "Tourisme viticole",
     video_vinus_partys: "Fêtes Vinus",
     watch_button: "REGARDER",
-    go_back: "RETOUR",
-    videos_title: "Section Vidéos",
-    videos_description: "Choisissez un thème pour explorer nos vidéos.",
-    partys_description: "🎉 Revivez les meilleurs moments des fêtes Vinus avec nos vidéos animées.",
-    education_description: "📚 Découvrez des conseils et des faits intéressants sur le vin dans nos vidéos éducatives.",
-    tourism_description: "🌍 Suivez nos voyages à travers les plus belles régions viticoles.",
-    tasting_description: "🍷 Apprenez et savourez l'art de la dégustation de vin avec nos vidéos exclusives.",
-    shop_title: "Boutique",
-    shop_description: "Trouvez le vin parfait et les produits pour rehausser votre goût."
-    homepage_button: "PAGE D'ACCUEIL"
+    homepage_button: "ACCUEIL"
   },
   de: {
     header_home: "Startseite",
@@ -108,36 +82,28 @@ const translations = {
     video_wine_tourism: "Weintourismus",
     video_vinus_partys: "Vinus-Partys",
     watch_button: "ANSCHAUEN",
-    go_back: "ZURÜCK",
-    videos_title: "Videoabschnitt",
-    videos_description: "Wähle ein Thema, um unsere Videoinhalte zu entdecken.",
-    partys_description: "🎉 Erlebe die besten Momente der Vinus-Partys mit unseren mitreißenden Videos.",
-    education_description: "📚 Entdecke Tipps, Kuriositäten und Weinwissen in unseren Lehrvideos.",
-    tourism_description: "🌍 Begleite uns auf Reisen durch die besten Weinregionen.",
-    tasting_description: "🍷 Lerne und genieße die Kunst der Weinverkostung mit unseren exklusiven Clips.",
-    shop_title: "Shop",
-    shop_description: "Finde den perfekten Wein und Produkte für deinen Geschmack."
     homepage_button: "STARTSEITE"
   }
 };
 
-function translate(lang) {
+document.getElementById("langSelect").addEventListener("change", function () {
+  const lang = this.value;
+  localStorage.setItem("preferredLanguage", lang); // persist language
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang] && translations[lang][key]) {
       el.textContent = translations[lang][key];
     }
   });
-}
-
-document.getElementById("langSelect").addEventListener("change", function () {
-  const lang = this.value;
-  localStorage.setItem("selectedLang", lang);
-  translate(lang);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const savedLang = localStorage.getItem("selectedLang") || "en";
+window.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("preferredLanguage") || "en";
   document.getElementById("langSelect").value = savedLang;
-  translate(savedLang);
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    if (translations[savedLang] && translations[savedLang][key]) {
+      el.textContent = translations[savedLang][key];
+    }
+  });
 });
