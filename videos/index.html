@@ -514,10 +514,12 @@
 </nav>
 <select id="langSelect" style="margin-left: 20px; padding: 5px;"><option value="en">🇬🇧 EN</option><option value="pt">🇵🇹 PT</option><option value="fr">🇫🇷 FR</option><option value="de">🇩🇪 DE</option></select>
 </header>
-<main style="text-align: center;">
-  <h1 data-i18n="videos_title">Videos Section</h1>
-  <p data-i18n="videos_description">Choose a theme to explore our video content.</p>
 
+<div class="main" style="text-align: center; padding: 60px 20px;">
+  <h1 data-i18n="videos_title" style="font-size: 36px; margin-bottom: 20px;">Video Section</h1>
+  <p data-i18n="videos_description" style="font-size: 18px;">Choose a theme to explore our video content</p>
+   <div style="text-align: center; margin-bottom: 50px;">
+</div>
   <div class="video-grid">
     <div class="video-card">
       <img alt="Vinus Partys" src="../images/party.jpg" />
@@ -540,21 +542,11 @@
       <a class="button" data-i18n="watch_button" href="tasting.html">WATCH</a>
     </div>
   </div>
-
-  <br />
-  <a href="../index.html" class="button" data-i18n="back_home" style="
-  display: inline-block;
-  margin-top: 50px;
-  padding: 12px 24px;
-  background-color: #f1c40f;
-  color: black;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-">HOMEPAGE</a>
-</main>
+ <div style="text-align: center; margin-bottom: 50px;">
+  <button id="backHomeBtn" data-i18n="back_home" onclick="window.location.href='/WineLovers/index.html'" style="padding: 12px 24px; background-color: #f1c40f; color: black; font-weight: bold; border: none; border-radius: 4px; cursor: pointer;">
+    HOMEPAGE
+  </button>
+</div>
 <style>
 .video-grid {
   display: grid;
