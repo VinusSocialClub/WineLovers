@@ -37,7 +37,7 @@ const translations = {
     footer_shipping: "Shipping & Returns", 
     footer_faq: "FAQ",
     footer_follow: "Follow Us",
-    footer_copyright: "©2025 Vinus Social Club,<br/>All rights reserved.",
+    footer_copyright: "©2025 Vinus Social Club, All rights reserved.",
   },
   pt: {
     header_home: "Início",
@@ -77,7 +77,7 @@ const translations = {
     footer_shipping: "Envios e Devoluções",
     footer_faq: "Perguntas Frequentes",
     footer_follow: "Siga-nos",
-    footer_copyright: "©2025 Vinus Social Club,<br/>Todos os direitos reservados.",
+    footer_copyright: "©2025 Vinus Social Club, Todos os direitos reservados.",
   },
   fr: {
     header_home: "Accueil",
@@ -117,7 +117,7 @@ const translations = {
     footer_shipping: "Livraison & Retours",
     footer_faq: "FAQ",
     footer_follow: "Suivez-nous",
-    footer_copyright: "©2025 Vinus Social Club,<br/>Tous droits réservés.",
+    footer_copyright: "©2025 Vinus Social Club, Tous droits réservés.",
   },
   de: {
     header_home: "Startseite",
@@ -157,7 +157,7 @@ const translations = {
     footer_shipping: "Versand & Rückgabe",
     footer_faq: "FAQ",
     footer_follow: "Folgen Sie uns",
-    footer_copyright: "©2025 Vinus Social Club,<br/>Alle Rechte vorbehalten.",
+    footer_copyright: "©2025 Vinus Social Club, Alle Rechte vorbehalten.",
   }
 };
 
