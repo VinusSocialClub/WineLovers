@@ -27,6 +27,7 @@ const translations = {
     tasting_description: "🍷 Learn and enjoy the art of wine tasting with our exclusive clips.",
     shop_title: "Shop",
     shop_description: "Find the perfect wine and products to elevate your taste."
+    homepage_button: "HOMEPAGE"
   },
   pt: {
     header_home: "Início",
@@ -56,6 +57,7 @@ const translations = {
     tasting_description: "🍷 Aprende e aprecia a arte da prova de vinhos com os nossos vídeos exclusivos.",
     shop_title: "Loja",
     shop_description: "Encontra o vinho perfeito e produtos para elevar o teu gosto."
+    homepage_button: "PÁGINA INICIAL"
   },
   fr: {
     header_home: "Accueil",
@@ -85,6 +87,7 @@ const translations = {
     tasting_description: "🍷 Apprenez et savourez l'art de la dégustation de vin avec nos vidéos exclusives.",
     shop_title: "Boutique",
     shop_description: "Trouvez le vin parfait et les produits pour rehausser votre goût."
+    homepage_button: "PAGE D'ACCUEIL"
   },
   de: {
     header_home: "Startseite",
@@ -114,6 +117,7 @@ const translations = {
     tasting_description: "🍷 Lerne und genieße die Kunst der Weinverkostung mit unseren exklusiven Clips.",
     shop_title: "Shop",
     shop_description: "Finde den perfekten Wein und Produkte für deinen Geschmack."
+    homepage_button: "STARTSEITE"
   }
 };
 
