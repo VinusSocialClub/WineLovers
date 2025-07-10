@@ -118,7 +118,7 @@ const translations = {
     video_vinus_partys: "Vinus-Partys",
     partys_description: "🎉 Erlebe die besten Momente der Vinus-Partys mit unseren Highlight-Videos noch einmal:",
     watch_button: "ANSCHAUEN",
-    shop_title: "Shop Bereich",
+    shop_title: "Geschäft",
     shop_description: "Entdecken Sie unsere exklusiven Weine, kuratierte Pakete und besondere Erlebnisse.",
     article_title: "Artikelbereich",
     article_description: "Lies über Weintipps, Trends und vieles mehr.",
