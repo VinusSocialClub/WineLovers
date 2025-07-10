@@ -501,6 +501,63 @@
 }
 
   html { overflow-y: scroll; }
+   .footer {
+  background-color: #002a18;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.footer-left {
+  flex: 1 1 200px;
+}
+
+.footer-section {
+  flex: 1 1 150px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #f1c40f;
+}
+
+.footer-section p {
+  margin: 4px 0;
+}
+
+.social-icons a img {
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section,
+  .footer-left {
+    flex: unset;
+  }
+
+  .social-icons a img {
+    margin: 0 8px;
+  }
+}
+
 </style>
 </head>
 <body>
