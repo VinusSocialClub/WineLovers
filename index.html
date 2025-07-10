@@ -501,54 +501,63 @@
 }
 
   html { overflow-y: scroll; }
-   
- .footer {
-  background-color: #004225;
-  padding: 40px 20px;
+   .footer {
+  background-color: #002a18;
   color: white;
-  text-align: center;
-}
-
-.footer-content {
+  padding: 40px 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
-  max-width: 1000px;
-  margin: 0 auto;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 60px;
+  font-size: 14px;
 }
 
-.footer-column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 150px;
+.footer-left {
+  flex: 1 1 200px;
 }
 
-.footer-column h3 {
+.footer-section {
+  flex: 1 1 150px;
+}
+
+.footer-section h4 {
   margin-bottom: 10px;
-  font-size: 18px;
-  font-weight: bold;
+  font-size: 16px;
+  color: #f1c40f;
 }
 
-.footer-column p {
+.footer-section p {
   margin: 4px 0;
-  font-size: 14px;
 }
 
-.footer-rights {
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.4;
+.social-icons a img {
+  margin-right: 10px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
 }
 
-.social-icons img {
-  width: 24px;
-  height: 24px;
-  margin: 0 6px;
+.social-icons a img:hover {
+  transform: scale(1.2);
 }
 
-   
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-section,
+  .footer-left {
+    flex: unset;
+  }
+
+  .social-icons a img {
+    margin: 0 8px;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -590,31 +599,27 @@
 </a></div>
 </section>
    <footer class="footer">
-  <div class="footer-content">
-    <div class="footer-column">
-      <p class="footer-rights" data-i18n="footer_rights">©2025 Vinus Social Club,<br>Todos os direitos reservados.</p>
-    </div>
-    <div class="footer-column">
-      <h3 data-i18n="footer_about_us">About Us</h3>
-      <p data-i18n="footer_our_story">Our Story</p>
-    </div>
-    <div class="footer-column">
-      <h3 data-i18n="footer_customer_service">Customer Service</h3>
-      <p data-i18n="footer_contact">Contact Us</p>
-      <p data-i18n="footer_shipping">Shipping & Returns</p>
-      <p data-i18n="footer_faq">FAQ</p>
-    </div>
-    <div class="footer-column">
-      <h3 data-i18n="footer_follow">Follow Us</h3>
-      <div class="social-icons">
-        <img src="../images/instagram.png" alt="Instagram" />
-        <img src="../images/facebook.png" alt="Facebook" />
-        <img src="../images/linkedin.png" alt="LinkedIn" />
-      </div>
+  <div class="footer-left">
+    <p data-i18n="footer_copyright">©2025 Vinus Social Club,<br/>All rights reserved.</p>
+  </div>
+  <div class="footer-section">
+    <h4 data-i18n="footer_about_us">About Us</h4>
+    <p data-i18n="footer_our_story">Our Story</p>
+  </div>
+  <div class="footer-section">
+    <h4 data-i18n="footer_customer_service">Customer Service</h4>
+    <p data-i18n="footer_contact">Contact Us</p>
+    <p data-i18n="footer_shipping">Shipping & Returns</p>
+    <p data-i18n="footer_faq">FAQ</p>
+  </div>
+  <div class="footer-section">
+    <h4 data-i18n="footer_follow">Follow Us</h4>
+    <div class="social-icons">
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/2111/2111463.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/733/733547.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/24/1384/1384014.png" alt="LinkedIn" /></a>
     </div>
   </div>
 </footer>
-
-
 <script src="script.js"></script></body>
 </html>
