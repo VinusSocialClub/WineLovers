@@ -24,7 +24,9 @@ const translations = {
     partys_description: "🎉 Relive the best moments of Vinus parties with our vibrant videos.",
     education_description: "📚 Discover wine tips, curiosities and knowledge in our educational videos.",
     tourism_description: "🌍 Join our travels and explore the finest wine regions with us.",
-    tasting_description: "🍷 Learn and enjoy the art of wine tasting with our exclusive clips."
+    tasting_description: "🍷 Learn and enjoy the art of wine tasting with our exclusive clips.",
+    shop_title: "Shop",
+    shop_description: "Find the perfect wine and products to elevate your taste."
   },
   pt: {
     header_home: "Início",
@@ -51,7 +53,9 @@ const translations = {
     partys_description: "🎉 Revive os melhores momentos das festas Vinus com os nossos vídeos vibrantes.",
     education_description: "📚 Descobre dicas, curiosidades e conhecimento vínico nos nossos vídeos educativos.",
     tourism_description: "🌍 Acompanha as nossas viagens e explorações pelas melhores regiões vinícolas.",
-    tasting_description: "🍷 Aprende e aprecia a arte da prova de vinhos com os nossos vídeos exclusivos."
+    tasting_description: "🍷 Aprende e aprecia a arte da prova de vinhos com os nossos vídeos exclusivos.",
+    shop_title: "Loja",
+    shop_description: "Encontra o vinho perfeito e produtos para elevar o teu gosto."
   },
   fr: {
     header_home: "Accueil",
@@ -78,7 +82,9 @@ const translations = {
     partys_description: "🎉 Revivez les meilleurs moments des fêtes Vinus avec nos vidéos animées.",
     education_description: "📚 Découvrez des conseils et des faits intéressants sur le vin dans nos vidéos éducatives.",
     tourism_description: "🌍 Suivez nos voyages à travers les plus belles régions viticoles.",
-    tasting_description: "🍷 Apprenez et savourez l'art de la dégustation de vin avec nos vidéos exclusives."
+    tasting_description: "🍷 Apprenez et savourez l'art de la dégustation de vin avec nos vidéos exclusives.",
+    shop_title: "Boutique",
+    shop_description: "Trouvez le vin parfait et les produits pour rehausser votre goût."
   },
   de: {
     header_home: "Startseite",
@@ -105,7 +111,9 @@ const translations = {
     partys_description: "🎉 Erlebe die besten Momente der Vinus-Partys mit unseren mitreißenden Videos.",
     education_description: "📚 Entdecke Tipps, Kuriositäten und Weinwissen in unseren Lehrvideos.",
     tourism_description: "🌍 Begleite uns auf Reisen durch die besten Weinregionen.",
-    tasting_description: "🍷 Lerne und genieße die Kunst der Weinverkostung mit unseren exklusiven Clips."
+    tasting_description: "🍷 Lerne und genieße die Kunst der Weinverkostung mit unseren exklusiven Clips.",
+    shop_title: "Shop",
+    shop_description: "Finde den perfekten Wein und Produkte für deinen Geschmack."
   }
 };
 
@@ -119,13 +127,13 @@ function translate(lang) {
 }
 
 document.getElementById("langSelect").addEventListener("change", function () {
-  const selectedLang = this.value;
-  localStorage.setItem("preferredLang", selectedLang); // Guardar idioma
-  translate(selectedLang);
+  const lang = this.value;
+  localStorage.setItem("selectedLang", lang);
+  translate(lang);
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const savedLang = localStorage.getItem("preferredLang") || "en"; // Usar idioma guardado ou EN por defeito
+  const savedLang = localStorage.getItem("selectedLang") || "en";
   document.getElementById("langSelect").value = savedLang;
   translate(savedLang);
 });
