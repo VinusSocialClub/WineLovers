@@ -22,7 +22,8 @@ const translations = {
     shop_description: "Discover our exclusive wines, curated packs, and unique experiences.",
     back_home: "HOMEPAGE",
     videos_title: "Videos Section",
-    videos_description: "Choose a theme to explore our video content."
+    videos_description: "Choose a theme to explore our video content.",
+    go_back: "GO BACK"
   },
   pt: {
     header_home: "Início",
@@ -47,7 +48,8 @@ const translations = {
     shop_description: "Descubra os nossos vinhos exclusivos, packs especiais e experiências únicas.",
     back_home: "PÁGINA INICIAL",
     videos_title: "Secção de Vídeos",
-    videos_description: "Escolhe um tema para explorar o nosso conteúdo em vídeo."
+    videos_description: "Escolhe um tema para explorar o nosso conteúdo em vídeo.",
+    go_back: "VOLTAR"
   },
   fr: {
     header_home: "Accueil",
@@ -72,7 +74,8 @@ const translations = {
     shop_description: "Découvrez nos vins exclusifs, nos packs soignés et des expériences uniques.",
     back_home: "PAGE D’ACCUEIL",
     videos_title: "Section Vidéos",
-    videos_description: "Choisissez un thème pour explorer notre contenu vidéo."
+    videos_description: "Choisissez un thème pour explorer notre contenu vidéo.",
+    go_back: "RETOUR"
   },
   de: {
     header_home: "Startseite",
@@ -97,7 +100,8 @@ const translations = {
     shop_description: "Entdecken Sie unsere exklusiven Weine, kuratierte Pakete und besondere Erlebnisse.",
     back_home: "STARTSEITE",
     videos_title: "Videobereich",
-    videos_description: "Wähle ein Thema, um unsere Videoinhalte zu entdecken."
+    videos_description: "Wähle ein Thema, um unsere Videoinhalte zu entdecken.",
+    go_back: "ZURÜCK"
   }
 };
 
