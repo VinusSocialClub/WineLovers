@@ -19,7 +19,9 @@ const translations = {
     video_wine_tourism: "Wine Tourism",
     video_vinus_partys: "Vinus Partys",
     watch_button: "WATCH",
-    homepage_button: "HOMEPAGE"
+    shop_title: "Shop Section",
+    shop_description: "Discover our exclusive wines, curated packs, and unique experiences.",
+    back_home: "HOMEPAGE"
   },
   pt: {
     header_home: "Início",
@@ -40,7 +42,9 @@ const translations = {
     video_wine_tourism: "Enoturismo",
     video_vinus_partys: "Festas Vinus",
     watch_button: "VER",
-    homepage_button: "INÍCIO"
+    shop_title: "Seção da Loja",
+    shop_description: "Descubra os nossos vinhos exclusivos, packs especiais e experiências únicas.",
+    back_home: "PÁGINA INICIAL"
   },
   fr: {
     header_home: "Accueil",
@@ -61,7 +65,9 @@ const translations = {
     video_wine_tourism: "Tourisme viticole",
     video_vinus_partys: "Fêtes Vinus",
     watch_button: "REGARDER",
-    homepage_button: "ACCUEIL"
+    shop_title: "Section Boutique",
+    shop_description: "Découvrez nos vins exclusifs, nos packs soignés et des expériences uniques.",
+    back_home: "PAGE D’ACCUEIL"
   },
   de: {
     header_home: "Startseite",
@@ -82,13 +88,16 @@ const translations = {
     video_wine_tourism: "Weintourismus",
     video_vinus_partys: "Vinus-Partys",
     watch_button: "ANSCHAUEN",
-    homepage_button: "STARTSEITE"
+    shop_title: "Shop Bereich",
+    shop_description: "Entdecken Sie unsere exklusiven Weine, kuratierte Pakete und besondere Erlebnisse.",
+    back_home: "STARTSEITE"
   }
 };
 
 document.getElementById("langSelect").addEventListener("change", function () {
   const lang = this.value;
-  localStorage.setItem("preferredLanguage", lang); // persist language
+  localStorage.setItem("preferredLanguage", lang);
+
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang] && translations[lang][key]) {
@@ -97,9 +106,10 @@ document.getElementById("langSelect").addEventListener("change", function () {
   });
 });
 
-window.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("preferredLanguage") || "en";
   document.getElementById("langSelect").value = savedLang;
+
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (translations[savedLang] && translations[savedLang][key]) {
