@@ -504,57 +504,50 @@
    
  .footer {
   background-color: #004225;
+  padding: 40px 20px;
   color: white;
   text-align: center;
-  padding: 40px 20px;
-  font-size: 14px;
-  border-top: 2px solid #f1c40f;
 }
 
-.footer .footer-columns {
+.footer-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.footer-section {
-  margin: 10px 30px;
-  min-width: 160px;
-}
-
-.footer-section h4 {
-  font-size: 16px;
-  color: #f1c40f;
-  margin-bottom: 10px;
-}
-
-.footer-section p {
-  margin: 5px 0;
-  color: white;
-}
-
-.footer-left p {
-  font-weight: bold;
-  white-space: pre-line; /* quebra de linha com \n */
-}
- .footer-rights {
-  font-weight: bold;
-  line-height: 1.6;
-  margin-top: 30px;
-
-.social-icons {
+.footer-column {
   display: flex;
-  justify-content: center;
-  gap: 15px;
-  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  min-width: 150px;
+}
+
+.footer-column h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.footer-column p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.footer-rights {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .social-icons img {
   width: 24px;
   height: 24px;
-  filter: brightness(100);
+  margin: 0 6px;
 }
+
    
 </style>
 </head>
@@ -597,29 +590,31 @@
 </a></div>
 </section>
    <footer class="footer">
- <div class="footer-column">
-  <p class="footer-rights" data-i18n="footer_rights"></p>
-</div>
-    <div class="footer-section">
-      <h4 data-i18n="footer_about">About Us</h4>
+  <div class="footer-content">
+    <div class="footer-column">
+      <p class="footer-rights" data-i18n="footer_rights">©2025 Vinus Social Club,<br>Todos os direitos reservados.</p>
+    </div>
+    <div class="footer-column">
+      <h3 data-i18n="footer_about_us">About Us</h3>
       <p data-i18n="footer_our_story">Our Story</p>
     </div>
-    <div class="footer-section">
-      <h4 data-i18n="footer_service">Customer Service</h4>
+    <div class="footer-column">
+      <h3 data-i18n="footer_customer_service">Customer Service</h3>
       <p data-i18n="footer_contact">Contact Us</p>
       <p data-i18n="footer_shipping">Shipping & Returns</p>
       <p data-i18n="footer_faq">FAQ</p>
     </div>
-    <div class="footer-section">
-      <h4 data-i18n="footer_follow">Follow Us</h4>
+    <div class="footer-column">
+      <h3 data-i18n="footer_follow">Follow Us</h3>
       <div class="social-icons">
-        <a href="https://www.instagram.com/vinussocialclub/" target="_blank"><img src="../images/instagram.png" alt="Instagram"></a>
-        <a href="https://www.facebook.com/vinussocialclub/" target="_blank"><img src="../images/facebook.png" alt="Facebook"></a>
-        <a href="https://pt.linkedin.com/in/vinus-social-club-a7b750297" target="_blank"><img src="../images/linkedin.png" alt="LinkedIn"></a>
+        <img src="../images/instagram.png" alt="Instagram" />
+        <img src="../images/facebook.png" alt="Facebook" />
+        <img src="../images/linkedin.png" alt="LinkedIn" />
       </div>
     </div>
   </div>
 </footer>
+
 
 <script src="script.js"></script></body>
 </html>
